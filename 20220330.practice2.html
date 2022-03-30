@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #root {
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid black;
+      background-color: #c4c4c4;
+    }
+    
+    /* top */
+    #con {
+      width: 100vw;
+      height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #con > h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* mid */
+    #wrap {
+      width: 100vw;
+      height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    #wrap > div {
+      width: 10vw;
+      height: 10vh;
+      margin: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid red;
+    }
+    /* bot */
+    #section {
+      width: 100vw;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* bot의 박스 모양잡기 */
+    #section > div {
+      width: 70vw;
+      height: 40vh;
+      margin: 1vw;
+      border: 1px solid blue;
+    }
+
+    #section > div:nth-child(1) {
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 30px solid black;
+    }
+
+    #section > div:nth-child(3) {
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 30px solid black;
+      border-right: 10px solid transparent;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="con">
+      <h1>COOKIERUN KINDOM</h1>
+      <h1>게임소개</h1>
+    </div>
+    <div id="wrap">
+      <div>모험</div>
+      <div>왕국</div>
+      <div>납품</div>
+      <div>PVP</div>
+      <div>길드</div>
+    </div>
+    <div id="section">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</body>
+</html>
